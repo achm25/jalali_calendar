@@ -1142,12 +1142,6 @@ class DatePickerDialogState extends State<DatePickerDialog> {
     final Dialog dialog = Dialog(child: OrientationBuilder(
         builder: (BuildContext context, Orientation orientation) {
       assert(orientation != null);
-      final Widget header = _DatePickerHeader(
-        selectedDate: _selectedDate,
-        mode: _mode,
-        onModeChanged: _handleModeChanged,
-        orientation: orientation,
-      );
       switch (orientation) {
         case Orientation.portrait:
           return SizedBox(
