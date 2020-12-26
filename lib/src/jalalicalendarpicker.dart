@@ -914,7 +914,7 @@ class _YearPickerState extends State<YearPicker> {
   }
 }
 
-class _DatePickerDialog extends StatefulWidget {
+class DatePickerDialog extends StatefulWidget {
   const _DatePickerDialog(
       {Key key,
       this.initialDate,
@@ -1269,7 +1269,7 @@ Future<String> jalaliCalendarPicker({
   assert(context != null);
   assert(debugCheckHasMaterialLocalizations(context));
 
-  Widget child = _DatePickerDialog(
+  Widget child = DatePickerDialog(
     initialDate: initialDate,
     firstDate: firstDate,
     lastDate: lastDate,
