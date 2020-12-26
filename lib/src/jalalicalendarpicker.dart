@@ -915,7 +915,7 @@ class _YearPickerState extends State<YearPicker> {
 }
 
 class DatePickerDialog extends StatefulWidget {
-  const _DatePickerDialog(
+  const DatePickerDialog(
       {Key key,
       this.initialDate,
       this.firstDate,
@@ -941,7 +941,7 @@ class DatePickerDialog extends StatefulWidget {
   final TimeOfDay initialTime;
 
   @override
-  _DatePickerDialogState createState() => _DatePickerDialogState();
+  DatePickerDialogState createState() => DatePickerDialogState();
 }
 
 Future<TimeOfDay> _getTime(BuildContext context,
@@ -962,7 +962,7 @@ Future<TimeOfDay> _getTime(BuildContext context,
   );
 }
 
-class _DatePickerDialogState extends State<_DatePickerDialog> {
+class DatePickerDialogState extends State<DatePickerDialog> {
   @override
   void initState() {
     super.initState();
